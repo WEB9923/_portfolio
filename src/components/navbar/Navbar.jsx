@@ -11,6 +11,7 @@ export default function Navbar() {
    const handleShowMobileMenu = () => {
       setIsShowMobileMenu(!isShowMobileMenu)
    }
+
    return (
       <>
          <nav className="navbar-nav">
@@ -21,11 +22,14 @@ export default function Navbar() {
                   transition={{duration: 1, type: "tween"}}
                   className="nav-left"
                >
-                  <Link to={"/"} className="logo">{`{<logo/>}`}</Link>
+                  <Link to={"/"} className="logo">{`{<a.ch.p./>}`}</Link>
                </motion.div>
                <motion.div className="nav-right">
                   {/*<AnimatePresence>*/}
-                  <ul className={`${isShowMobileMenu && "showMobileMenu"} ul`}>
+                  <motion.ul
+                     className={`${isShowMobileMenu && "showMobileMenu"} ul`
+                  }
+                  >
                      {links.map((link) => (
                         <li
                            key={link.id}
@@ -35,7 +39,7 @@ export default function Navbar() {
                            </NavLink>
                         </li>
                      ))}
-                  </ul>
+                  </motion.ul>
                   {/*</AnimatePresence>*/}
                   <div style={{
                      display: "flex",
@@ -43,7 +47,10 @@ export default function Navbar() {
                      gap: "20px"
                   }}>
                      <SocialIcons/>
-                     <button className="burger" onClick={() => handleShowMobileMenu()}>
+                     <button
+                        className={`burger ${isShowMobileMenu && "active"}`}
+                        onClick={() => handleShowMobileMenu()}
+                     >
                         <BsListNested size={23}/>
                      </button>
                   </div>

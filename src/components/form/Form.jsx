@@ -9,6 +9,7 @@ export default function Form({obj}) {
    return (
       <>
          <motion.form
+            autoComplete={"off"}
             ref={obj.formRef}
             onSubmit={obj.handleSendEmail}
             initial={{opacity:0,y:50,scale:0.5}}

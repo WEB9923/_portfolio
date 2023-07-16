@@ -39,11 +39,22 @@
             overflow: hidden;
             border-radius: $mediumR;
             pointer-events: none;
+            position: relative;
+            &:before{
+               position: absolute;
+               content: "";
+               z-index: 1;
+               width: 100%;
+               height: 100%;
+               background-color: rgba(0, 0, 0, 0.42);
+            }
             img{
                width: 100%;
                height: 100%;
                object-fit: cover;
                object-position: top;
+               image-rendering: high-quality;
+               image-resolution: snap;
             }
          }
       }

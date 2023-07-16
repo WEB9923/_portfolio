@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="container">
                <div className="footer-top">
                   <div className="footer-left">
-                     <Link to={"/"} className="logo">{`{<logo/>}`}</Link>
+                     <Link to={"/"} className="logo">{`{<a.ch.p./>}`}</Link>
                   </div>
                   <div className="footer-right">
                      <div className="contact-info">

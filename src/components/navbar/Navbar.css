@@ -70,6 +70,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    animation: anim 0.5s ease;
   }
   .navbar-nav .container .nav-right .ul.showMobileMenu {
     display: flex;
@@ -92,12 +93,24 @@
 .navbar-nav .container .nav-right .burger:hover {
   opacity: 0.8;
 }
+.navbar-nav .container .nav-right .burger.active {
+  scale: 0.9;
+}
 .navbar-nav .container .nav-right .burger svg {
   color: #3e5d4c;
 }
 @media screen and (max-width: 650px) {
   .navbar-nav .container .nav-right .burger {
     display: flex;
+  }
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

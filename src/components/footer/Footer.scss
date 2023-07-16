@@ -18,6 +18,9 @@
                text-transform: uppercase;
                font-size: calc($extra - 4px);
                font-family: $titleFont;
+               @media screen and (max-width: 550px){
+                  font-size: calc($extra - 10px);
+               }
             }
          }
          .footer-right{

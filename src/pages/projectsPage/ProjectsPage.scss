@@ -5,13 +5,16 @@
 .projects-section{
    .container{
       .projects-wrapper{
-         min-height: 300px;
+         min-height: 60vh;
          position: relative;
          display: flex;
-         gap: 20px;
+         gap: 30px;
          flex-wrap: wrap;
          padding: 50px 0;
          justify-content: center;
+         @media screen and (max-width: 650px){
+            min-height: 50vh;
+         }
          .error-text{
             color: #bc4d4d;
             text-align: center;

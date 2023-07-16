@@ -30,6 +30,11 @@
   font-size: 26px;
   font-family: "Lobster Two";
 }
+@media screen and (max-width: 550px) {
+  .footer .container .footer-top .footer-left .logo {
+    font-size: 20px;
+  }
+}
 .footer .container .footer-top .footer-right {
   display: flex;
   align-items: center;

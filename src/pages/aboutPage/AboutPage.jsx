@@ -2,6 +2,7 @@ import about from "../../data/about.json";
 import "./AboutPage.scss";
 import {BsCalendar3, BsCheckCircleFill, BsFillXCircleFill} from "react-icons/bs";
 import {RiBuilding4Line} from "react-icons/ri";
+import {motion} from "framer-motion";
 
 export default function AboutPage() {
    const title = "<h1>about me</h1>";
@@ -11,7 +12,14 @@ export default function AboutPage() {
             <div className="container">
                <h1 className="title">{title}</h1>
                <div className="about-me-wrapper">
-                  <p className="about-text">{"<p>"}👋{about["about-me"]}{"<p/>"}</p>
+                  <motion.p
+                     className="about-text"
+                     initial={{opacity:0,y:50}}
+                     animate={{opacity:1,y:0}}
+                     tranition={{type:"spring",duration:0.5,stiffness:100}}
+                  >
+                     {"<p>"}👋{about["about-me"]}{"<p/>"}
+                  </motion.p>
                   <div className="about-content">
                      <div className="work-experience">
                         <h1 className="title">work experience</h1>
@@ -22,7 +30,13 @@ export default function AboutPage() {
                         <div className="education-wrapper">
                            {about.education.map((item) => {
                               return (
-                                 <div key={item.id} className="education-component">
+                                 <motion.div
+                                    key={item.id}
+                                    className="education-component"
+                                    initial={{y:50,opacity:0}}
+                                    whileInView={{y:0,opacity:1}}
+                                    transition={{duration:0.5,type:"spring",stiffness:100}}
+                                 >
                                     <div className="education-top">
                                        {item.languages.map((lang) => (
                                           <h4 key={lang} className="education-component-langs">{lang}</h4>
@@ -44,7 +58,7 @@ export default function AboutPage() {
                                              : <span className="not-completed"><BsFillXCircleFill size={15}/>not completed</span>}
                                        </div>
                                     </div>
-                                 </div>
+                                 </motion.div>
                               )
                            })}
                         </div>
