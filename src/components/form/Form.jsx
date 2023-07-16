@@ -3,15 +3,34 @@ import {IoSend} from "react-icons/io5";
 import {BsCheckCircleFill} from "react-icons/bs";
 import {ClipLoader} from "react-spinners";
 import {motion} from "framer-motion";
+import {useFormik} from "formik";
+import {EmailSchema} from "../../schemas/EmailSchema.js";
 
 // eslint-disable-next-line react/prop-types
-export default function Form({obj}) {
+export default function Form({obj, onSubmit}) {
+   const {
+      handleSubmit,
+      errors,
+      values,
+      touched,
+      handleChange,
+      handleBlur
+   } = useFormik({
+      initialValues:{
+         from_name:"",
+         from_email:"",
+         message:""
+      },
+      validationSchema: EmailSchema,
+      onSubmit
+   })
+
    return (
       <>
          <motion.form
             autoComplete={"off"}
             ref={obj.formRef}
-            onSubmit={obj.handleSendEmail}
+            onSubmit={handleSubmit}
             initial={{opacity:0,y:50,scale:0.5}}
             animate={{opacity:1, y:0, scale:1}}
             transition={{type:"spring",stiffness:100,duration:0.5}}
@@ -20,13 +39,36 @@ export default function Form({obj}) {
             {obj.success === "OK" && <><p className="success"><BsCheckCircleFill size={20}/>email sent!</p></>}
             <div className="form-wrapper">
                <div className="">
-                  <input name="from_name" type="text" placeholder="enter your name"/>
+                  <input
+                     name="from_name"
+                     type="text"
+                     placeholder="enter your name"
+                     onChange={handleChange}
+                     onBlur={handleBlur}
+                     value={values.from_name}
+                  />
+                  {errors && touched.from_name && <p className="error-text">{errors.from_name}</p>}
                </div>
                <div className="">
-                  <input name="from_email" type="email" placeholder="enter your email adress"/>
+                  <input
+                     name="from_email"
+                     type="email"
+                     placeholder="enter your email adress"
+                     onChange={handleChange}
+                     onBlur={handleBlur}
+                     value={values.from_email}
+                  />
+                  {errors && touched.from_email && <p className="error-text">{errors.from_email}</p>}
                </div>
                <div className="">
-                  <textarea name="message" placeholder="enter your message"/>
+                  <textarea
+                     name="message"
+                     placeholder="enter your message"
+                     onChange={handleChange}
+                     onBlur={handleBlur}
+                     value={values.message}
+                  />
+                  {errors && touched.message && <p className="error-text">{errors.message}</p>}
                </div>
                <div className="">
 

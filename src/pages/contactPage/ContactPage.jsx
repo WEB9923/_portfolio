@@ -13,14 +13,12 @@ export default function ContactPage() {
    const [isSending,setIsSending] = useState(false);
    const [success,setSuccess] = useState("");
 
-   const handleSendEmail = async (e) => {
-      e.preventDefault();
+   const onSubmit = async () => {
       try {
          setIsSending(true);
          await emailjs.sendForm(serviceId, templateId, formRef.current, publicId)
             .then((result) => {
                setSuccess(result.text);
-               formRef.current.reset();
          }, (error) => {
             setSuccess(error.text);
          });
@@ -33,7 +31,6 @@ export default function ContactPage() {
 
    const obj = {
       formRef,
-      handleSendEmail,
       isSending,
       success
    }
@@ -44,7 +41,7 @@ export default function ContactPage() {
             <div className="container">
                <h1 className="title">{title}</h1>
                <div className="contact-wrapper">
-                  <Form obj={obj}/>
+                  <Form obj={obj} onSubmit={onSubmit}/>
                </div>
             </div>
          </section>
