@@ -9,7 +9,6 @@ export default function Form({obj}) {
    return (
       <>
          <motion.form
-            {/* eslint-disable-next-line react/prop-types */}
             ref={obj.formRef}
             onSubmit={obj.handleSendEmail}
             initial={{opacity:0,y:50,scale:0.5}}
