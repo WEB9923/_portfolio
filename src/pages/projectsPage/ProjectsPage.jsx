@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import {getData} from "../../services/GetRepositoriesData.js";
 import Loader from "../../components/loader/Loader.jsx";
 import "./ProjectsPage.scss";
+import {useTheme} from "../../store/ThemeContext.jsx";
 
 
 export default function ProjectsPage() {
@@ -27,10 +28,12 @@ export default function ProjectsPage() {
       getReposData().then((res) => setReposData(res));
    }, []);
 
+   const {isDarkTheme} = useTheme();
+
 
    return (
       <>
-         <section className="projects-section">
+         <section className={`projects-section ${isDarkTheme && "darkmode"}`}>
             <div className="container">
                <h1 className="title">{title}</h1>
                <div className="projects-wrapper">

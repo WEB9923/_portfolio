@@ -5,6 +5,7 @@ import {ClipLoader} from "react-spinners";
 import {motion} from "framer-motion";
 import {useFormik} from "formik";
 import {EmailSchema} from "../../schemas/EmailSchema.js";
+import {useTheme} from "../../store/ThemeContext.jsx";
 
 // eslint-disable-next-line react/prop-types
 export default function Form({obj, onSubmit}) {
@@ -25,6 +26,8 @@ export default function Form({obj, onSubmit}) {
       onSubmit
    })
 
+   const {isDarkTheme} = useTheme();
+
    return (
       <>
          <motion.form
@@ -34,6 +37,7 @@ export default function Form({obj, onSubmit}) {
             initial={{opacity:0,y:50,scale:0.5}}
             animate={{opacity:1, y:0, scale:1}}
             transition={{type:"spring",stiffness:100,duration:0.5}}
+            className={`${isDarkTheme && "darkmode"}`}
          >
             <h1 className="title">send email</h1>
             {obj.success === "OK" && <><p className="success"><BsCheckCircleFill size={20}/>email sent!</p></>}

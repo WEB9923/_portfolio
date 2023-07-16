@@ -4,6 +4,7 @@ import {PiGithubLogo} from "react-icons/pi";
 import {BsCalendar3, BsCheckCircleFill, BsFillXCircleFill} from "react-icons/bs";
 import {useRef, useState} from "react";
 import {motion} from "framer-motion";
+import {useTheme} from "../../store/ThemeContext.jsx";
 
 // eslint-disable-next-line react/prop-types
 export default function Card({data}) {
@@ -14,9 +15,12 @@ export default function Card({data}) {
          () => setIsCopied(true)
       );
    }
+
+   const {isDarkTheme} = useTheme();
+
    return (
       <>
-         <motion.div className="card" initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",stiffness:100,duration:0.5}}>
+         <motion.div className={`card ${isDarkTheme && "darkmode"}`} initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",stiffness:100,duration:0.5}}>
             <div className="card-top">
                {/* eslint-disable-next-line react/prop-types */}
                <h2>{data?.name}</h2>

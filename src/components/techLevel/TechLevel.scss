@@ -77,4 +77,22 @@
          }
       }
    }
+   &.darkmode{
+      .tech-level-components{
+         .language-component{
+            .line{
+               background-color: #3d3d3d;
+               .indicator{
+                  background-color: $darkModeDarkestBgColor;
+                  .tooltip{
+                     background-color: $darkModeDarkestBgColor;
+                     &:after{
+                        background-color: $darkModeDarkestBgColor;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
 }

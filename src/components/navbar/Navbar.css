@@ -104,6 +104,17 @@
     display: flex;
   }
 }
+.navbar-nav.darkmode {
+  background-color: #323030;
+}
+.navbar-nav.darkmode .nav-right .burger {
+  background-color: #363837;
+}
+@media screen and (max-width: 650px) {
+  .navbar-nav.darkmode .nav-right .ul {
+    background-color: #323030;
+  }
+}
 
 @keyframes anim {
   0% {

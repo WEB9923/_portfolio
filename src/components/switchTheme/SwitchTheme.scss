@@ -1,0 +1,21 @@
+@import "../../styles/Variables";
+
+
+button{
+   width: 45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 9999999;
+   outline: none;
+   border: 2px solid $textColor;
+   background-color: $darkestBgColor;
+   border-radius: $smallR;
+   svg{
+      color: $textColor;
+   }
+   &.darkmode{
+      background-color: $darkModeDarkestBgColor;
+   }
+}

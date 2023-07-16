@@ -91,6 +91,19 @@
          }
       }
    }
+   &.darkmode{
+      background-color: $darkModeDarkestBgColor;
+      .nav-right{
+         .burger{
+            background-color: $darkModeBgColor;
+         }
+         @media screen and (max-width: 650px){
+            .ul{
+               background-color: $darkModeDarkestBgColor;
+            }
+         }
+      }
+   }
 }
 
 

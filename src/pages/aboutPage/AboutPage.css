@@ -117,5 +117,14 @@
   background-color: rgba(192, 134, 134, 0.59);
   color: #c65555;
 }
+.about-me.darkmode {
+  background-color: #363837;
+}
+.about-me.darkmode .container .about-me-wrapper .about-content .education .education-wrapper .education-component {
+  border-bottom: 0.5px solid #323030;
+}
+.about-me.darkmode .container .about-me-wrapper .about-content .education .education-wrapper .education-component .education-top .education-component-langs {
+  background-color: #323030;
+}
 
 /*# sourceMappingURL=AboutPage.css.map */

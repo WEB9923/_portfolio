@@ -137,5 +137,17 @@
 .card .card-footer a:hover svg {
   color: #7C8363;
 }
+.card.darkmode {
+  background-color: #323030;
+}
+.card.darkmode .card-body div span {
+  background-color: #363837;
+}
+.card.darkmode .info div input {
+  background-color: #363837;
+}
+.card.darkmode .info div button {
+  background-color: #363837;
+}
 
 /*# sourceMappingURL=Card.css.map */

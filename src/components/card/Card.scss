@@ -124,4 +124,24 @@
          }
       }
    }
+   &.darkmode{
+      background-color: $darkModeDarkestBgColor;
+      .card-body{
+         div{
+            span{
+               background-color: $darkModeBgColor;
+            }
+         }
+      }
+      .info{
+         div{
+            input{
+               background-color: $darkModeBgColor;
+            }
+            button{
+               background-color: $darkModeBgColor;
+            }
+         }
+      }
+   }
 }

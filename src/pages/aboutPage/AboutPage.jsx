@@ -3,12 +3,14 @@ import "./AboutPage.scss";
 import {BsCalendar3, BsCheckCircleFill, BsFillXCircleFill} from "react-icons/bs";
 import {RiBuilding4Line} from "react-icons/ri";
 import {motion} from "framer-motion";
+import {useTheme} from "../../store/ThemeContext.jsx";
 
 export default function AboutPage() {
    const title = "<h1>about me</h1>";
+   const {isDarkTheme} = useTheme();
    return (
       <>
-         <section className="about-me">
+         <section className={`about-me ${isDarkTheme && "darkmode"}`}>
             <div className="container">
                <h1 className="title">{title}</h1>
                <div className="about-me-wrapper">

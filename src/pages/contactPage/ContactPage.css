@@ -23,5 +23,8 @@
   justify-content: center;
   height: 100%;
 }
+.contact-section.darkmode {
+  background-color: #363837;
+}
 
 /*# sourceMappingURL=ContactPage.css.map */

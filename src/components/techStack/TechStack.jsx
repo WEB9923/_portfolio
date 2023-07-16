@@ -5,12 +5,14 @@ import "./TechStack.scss";
 
 import notAvailable from "../../assets/not-available.png";
 import AnimatedTitle from "../animatedTitle/AnimatedTitle.jsx";
+import {useTheme} from "../../store/ThemeContext.jsx";
 
 export default function TechStack() {
    const title = "<h1>tech-stack</h1>".split("");
+   const {isDarkTheme} = useTheme();
    return (
       <>
-         <section className="tech-stack">
+         <section className={`tech-stack ${isDarkTheme && "darkmode"}`}>
             <div className="container">
                <AnimatedTitle title={title}/>
                <div className="tech-stack-wrapper">

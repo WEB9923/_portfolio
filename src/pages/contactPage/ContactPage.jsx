@@ -2,6 +2,7 @@ import Form from "../../components/form/Form.jsx";
 import "./ContactPage.scss";
 import {useRef, useState} from "react";
 import * as emailjs from "@emailjs/browser";
+import {useTheme} from "../../store/ThemeContext.jsx";
 
 const serviceId = import.meta.env.VITE_SERVICE_ID;
 const templateId = import.meta.env.VITE_TEMPLATE_ID;
@@ -35,9 +36,11 @@ export default function ContactPage() {
       success
    }
 
+   const {isDarkTheme} = useTheme();
+
    return (
       <>
-         <section className="contact-section">
+         <section className={`contact-section ${isDarkTheme && "darkmode"}`}>
             <div className="container">
                <h1 className="title">{title}</h1>
                <div className="contact-wrapper">

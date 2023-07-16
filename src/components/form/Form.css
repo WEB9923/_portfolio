@@ -106,5 +106,12 @@ form .form-wrapper div button[type=submit] {
 form .form-wrapper div button[type=submit] svg {
   color: #d0e0dc;
 }
+form.darkmode {
+  background-color: #323030;
+}
+form.darkmode .form-wrapper div input,
+form.darkmode .form-wrapper div textarea {
+  background-color: #363837;
+}
 
 /*# sourceMappingURL=Form.css.map */

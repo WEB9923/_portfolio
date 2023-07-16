@@ -90,5 +90,17 @@
   font-size: 14px;
   color: rgba(154, 160, 134, 0.6);
 }
+.tech-level-content.darkmode .tech-level-components .language-component .line {
+  background-color: #3d3d3d;
+}
+.tech-level-content.darkmode .tech-level-components .language-component .line .indicator {
+  background-color: #323030;
+}
+.tech-level-content.darkmode .tech-level-components .language-component .line .indicator .tooltip {
+  background-color: #323030;
+}
+.tech-level-content.darkmode .tech-level-components .language-component .line .indicator .tooltip:after {
+  background-color: #323030;
+}
 
 /*# sourceMappingURL=TechLevel.css.map */

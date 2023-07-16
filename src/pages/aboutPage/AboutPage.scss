@@ -129,5 +129,26 @@
          }
       }
    }
+   &.darkmode{
+      background-color: $darkModeBgColor;
+      .container{
+         .about-me-wrapper{
+            .about-content{
+               .education{
+                  .education-wrapper{
+                     .education-component{
+                        border-bottom: 0.5px solid $darkModeDarkestBgColor;
+                        .education-top{
+                           .education-component-langs{
+                              background-color: $darkModeDarkestBgColor;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
 }
 

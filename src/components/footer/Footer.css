@@ -100,5 +100,13 @@
     border-radius: 6px;
   }
 }
+.footer.darkmode {
+  background-color: #323030;
+}
+@media screen and (max-width: 780px) {
+  .footer.darkmode .footer-bottom .footer-bottom-right p {
+    background-color: #363837;
+  }
+}
 
 /*# sourceMappingURL=Footer.css.map */

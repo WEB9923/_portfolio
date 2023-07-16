@@ -61,5 +61,14 @@
 .tech-stack .container .tech-level {
   margin-top: 50px;
 }
+.tech-stack.darkmode {
+  background-color: #363837;
+}
+.tech-stack.darkmode .container .tech-stack-wrapper .stack-item {
+  background-color: #323030;
+}
+.tech-stack.darkmode .container .tech-stack-wrapper .stack-item .language h3 {
+  background-color: #363837;
+}
 
 /*# sourceMappingURL=TechStack.css.map */

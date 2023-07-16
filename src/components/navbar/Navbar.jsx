@@ -5,16 +5,17 @@ import "./Navbar.scss";
 import {BsListNested} from "react-icons/bs";
 import {motion} from "framer-motion";
 import SocialIcons from "../socialIcons/SocialIcons.jsx";
+import {useTheme} from "../../store/ThemeContext.jsx";
 
 export default function Navbar() {
    const [isShowMobileMenu, setIsShowMobileMenu] = useState(false);
    const handleShowMobileMenu = () => {
       setIsShowMobileMenu(!isShowMobileMenu)
    }
-
+   const {isDarkTheme} = useTheme();
    return (
       <>
-         <nav className="navbar-nav">
+         <nav className={`navbar-nav ${isDarkTheme && "darkmode"}`}>
             <div className="container">
                <motion.div
                   initial={{x: -50, opacity: 0}}

@@ -102,5 +102,8 @@
     height: 250px;
   }
 }
+.header.darkmode {
+  background-color: #363837;
+}
 
 /*# sourceMappingURL=Header.css.map */

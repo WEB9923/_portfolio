@@ -35,5 +35,8 @@
   font-size: 22px;
   font-family: "Ysabeau Infant";
 }
+.projects-section.darkmode {
+  background-color: #363837;
+}
 
 /*# sourceMappingURL=ProjectsPage.css.map */

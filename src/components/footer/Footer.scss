@@ -98,4 +98,16 @@
          }
       }
    }
+   &.darkmode{
+      background-color: $darkModeDarkestBgColor;
+      .footer-bottom{
+         @media screen and (max-width:780px ){
+            .footer-bottom-right{
+               p{
+                  background-color: $darkModeBgColor;
+               }
+            }
+         }
+      }
+   }
 }

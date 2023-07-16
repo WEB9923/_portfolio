@@ -2,11 +2,13 @@ import {Link, NavLink} from "react-router-dom";
 import SocialIcons from "../socialIcons/SocialIcons.jsx";
 import links from "../../data/Links.json";
 import "./Footer.scss";
+import {useTheme} from "../../store/ThemeContext.jsx";
 
 export default function Footer() {
+   const {isDarkTheme} = useTheme();
    return (
       <>
-         <footer className="footer">
+         <footer className={`footer ${isDarkTheme && "darkmode"}`}>
             <div className="container">
                <div className="footer-top">
                   <div className="footer-left">

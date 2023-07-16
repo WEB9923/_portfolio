@@ -91,4 +91,15 @@ form{
          }
       }
    }
+   &.darkmode{
+      background-color: $darkModeDarkestBgColor;
+      .form-wrapper{
+         div{
+            input,
+            textarea{
+               background-color: $darkModeBgColor;
+            }
+         }
+      }
+   }
 }

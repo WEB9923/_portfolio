@@ -52,4 +52,19 @@
          margin-top: 50px;
       }
    }
+   &.darkmode{
+      background-color: $darkModeBgColor;
+      .container{
+         .tech-stack-wrapper{
+            .stack-item{
+               background-color: $darkModeDarkestBgColor;
+               .language{
+                  h3{
+                     background-color: $darkModeBgColor;
+                  }
+               }
+            }
+         }
+      }
+   }
 }
