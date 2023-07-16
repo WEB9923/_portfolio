@@ -1,14 +1,12 @@
-import Navbar from "./components/Navbar.jsx";
-import {BrowserRouter} from "react-router-dom";
+import {RouterProvider} from "react-router-dom";
+import {routes} from "./routes/Routes.jsx";
 
 export default function App() {
 
 
   return (
     <>
-      <BrowserRouter>
-         <Navbar/>
-      </BrowserRouter>
+      <RouterProvider router={routes} />
     </>
   )
 }

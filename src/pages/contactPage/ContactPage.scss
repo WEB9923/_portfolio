@@ -1,0 +1,15 @@
+@import "../../styles/Mixins";
+@import "../../styles/Variables";
+
+
+.contact-section{
+   height: 90vh;
+   .container{
+      .contact-wrapper{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100%;
+      }
+   }
+}

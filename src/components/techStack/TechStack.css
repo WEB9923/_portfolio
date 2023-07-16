@@ -1,0 +1,65 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #3e5d4c;
+  text-transform: capitalize;
+  font-family: "Lobster Two";
+  font-weight: 700;
+}
+
+.tech-stack .container .tech-stack-wrapper {
+  display: flex;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 50px;
+}
+.tech-stack .container .tech-stack-wrapper .stack-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ebf1ed;
+  width: 150px;
+  height: 150px;
+  border-radius: 6px;
+}
+.tech-stack .container .tech-stack-wrapper .stack-item .img {
+  width: 80px;
+  height: 80px;
+  user-select: none;
+}
+.tech-stack .container .tech-stack-wrapper .stack-item .img img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-position: center;
+  object-fit: contain;
+}
+.tech-stack .container .tech-stack-wrapper .stack-item .language {
+  margin-top: 10px;
+}
+.tech-stack .container .tech-stack-wrapper .stack-item .language h3 {
+  padding: 5px 10px;
+  user-select: none;
+  color: #3e5d4c;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Ysabeau Infant";
+  border-radius: 6px;
+  text-transform: capitalize;
+  background-color: #d0e0dc;
+}
+.tech-stack .container .tech-level {
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=TechStack.css.map */

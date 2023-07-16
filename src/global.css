@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:visited {
+  color: #3e5d4c;
+}
+
+a {
+  color: #3e5d4c;
+  user-select: none;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.title {
+  font-size: 35px;
+  color: #3e5d4c;
+  text-transform: lowercase;
+  font-weight: 700;
+  display: inline-flex;
+}
+
+::selection {
+  background-color: #d0e0dc;
+  color: #7C8363;
+}
+
+/*# sourceMappingURL=global.css.map */

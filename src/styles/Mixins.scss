@@ -1,0 +1,19 @@
+@import "./Variables";
+/// container
+.container{
+   max-width: 1200px;
+   width: 100%;
+   height: 100%;
+   margin: auto;
+   padding-inline: 20px;
+}
+/// title
+.title{
+   font-size: $extra;
+   color: $textColor;
+   text-transform: capitalize;
+   font-family: $titleFont;
+   font-weight: $boldWeight;
+}
+
+

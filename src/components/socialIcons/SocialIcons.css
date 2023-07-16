@@ -1,0 +1,8 @@
+a svg {
+  transition: 0.3s ease;
+}
+a:hover svg {
+  color: rgba(154, 160, 134, 0.6);
+}
+
+/*# sourceMappingURL=SocialIcons.css.map */

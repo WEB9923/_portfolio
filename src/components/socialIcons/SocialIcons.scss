@@ -1,0 +1,11 @@
+@import "../../styles/Variables";
+
+
+a{
+   svg{
+      transition: .3s ease;
+   }
+   &:hover svg{
+      color: $colorlessText;
+   }
+}

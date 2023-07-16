@@ -1,0 +1,98 @@
+@import "../../styles/Variables";
+@import "../../styles/Mixins";
+
+
+
+.footer{
+   background-color: $bgColor;
+   .container{
+      .footer-top{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 30px 0;
+         border-bottom: 2px solid $darkestBgColor;
+         .footer-left{
+            .logo{
+               font-weight: $extraBold;
+               text-transform: uppercase;
+               font-size: calc($extra - 4px);
+               font-family: $titleFont;
+            }
+         }
+         .footer-right{
+            display: flex;
+            align-items:center;
+            gap: 30px;
+            .contact-info{
+               display: flex;
+               flex-direction: column;
+               gap: 5px;
+               p{
+                  color: $lightTextColor;
+                  font-family: $font;
+                  font-weight: $mediumWeight;
+                  user-select: none;
+                  font-size: calc($small + 2px);
+               }
+            }
+         }
+         @media screen and (max-width:700px ){
+            .footer-right{
+               .social{
+                  display: none;
+               }
+            }
+         }
+      }
+      .footer-bottom{
+         padding: 30px 0;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         .footer-bottom-left{
+            ul{
+               display: flex;
+               align-items: center;
+               gap: 25px;
+               li{
+                  a{
+                     font-family: $font;
+                     font-weight: $boldWeight;
+                     font-size: $medium;
+                     text-transform: capitalize;
+                     color: $colorlessText;
+                     &.active{
+                        color: $lightTextColor;
+                     }
+                  }
+               }
+            }
+         }
+         .footer-bottom-right{
+            p{
+               color: $textColor;
+               font-family: $font;
+               font-size: $medium;
+               font-weight: $mediumWeight;
+               text-transform: capitalize;
+               span{
+                  color: $lightTextColor;
+                  font-weight: $extraBold;
+               }
+            }
+         }
+         @media screen and (max-width:780px ){
+            flex-direction: column;
+            gap: 30px;
+            .footer-bottom-right{
+               p{
+                  padding: 5px 10px;
+                  background-color: $darkestBgColor;
+                  border-radius: $smallR;
+               }
+            }
+         }
+      }
+   }
+}

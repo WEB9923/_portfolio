@@ -1,0 +1,95 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #3e5d4c;
+  text-transform: capitalize;
+  font-family: "Lobster Two";
+  font-weight: 700;
+}
+
+.header {
+  height: calc(100vh - 70px);
+  overflow: hidden;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header .container .header-left {
+  width: 40%;
+}
+.header .container .header-left span {
+  text-transform: uppercase;
+  font-weight: 900;
+  flex-grow: 1;
+  font-family: "Lobster Two";
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #3e5d4c;
+  line-height: 2;
+}
+@media screen and (max-width: 1050px) {
+  .header .container .header-left span {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .header .container .header-left span {
+    font-size: 30px;
+  }
+}
+.header .container .header-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .container .header-right .header-image {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  pointer-events: none;
+}
+.header .container .header-right .header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+@media screen and (max-width: 830px) {
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .container .header-left {
+    width: 70%;
+  }
+  .header .container .header-right {
+    width: 100%;
+    justify-content: center;
+  }
+  .header .container .header-right .header-image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header .container .header-left {
+    width: 100%;
+  }
+  .header .container .header-right .header-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

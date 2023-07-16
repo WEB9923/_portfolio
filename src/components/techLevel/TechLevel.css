@@ -1,0 +1,94 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #3e5d4c;
+  text-transform: capitalize;
+  font-family: "Lobster Two";
+  font-weight: 700;
+}
+
+.tech-level-content {
+  margin-top: 50px;
+  padding: 100px 0;
+}
+.tech-level-content .tech-level-components {
+  margin-top: 50px;
+}
+.tech-level-content .tech-level-components .language-component {
+  margin: 30px 0;
+}
+.tech-level-content .tech-level-components .language-component h5 {
+  color: #3e5d4c;
+  font-weight: 700;
+  font-family: "Ysabeau Infant";
+  font-size: 14px;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+}
+.tech-level-content .tech-level-components .language-component .line {
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #ebf1ed;
+  position: relative;
+}
+.tech-level-content .tech-level-components .language-component .line .indicator {
+  background-color: #d0e0dc;
+  height: inherit;
+  border-radius: 6px;
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.tech-level-content .tech-level-components .language-component .line .indicator .tooltip {
+  position: absolute;
+  top: -30px;
+  right: -15px;
+  padding: 2px 10px;
+  border-radius: 6px;
+  background-color: #ebf1ed;
+}
+.tech-level-content .tech-level-components .language-component .line .indicator .tooltip:before {
+  content: attr(data-percent);
+  font-size: 12px;
+  color: rgba(154, 160, 134, 0.6);
+  font-weight: 600;
+  font-family: "Ysabeau Infant";
+}
+.tech-level-content .tech-level-components .language-component .line .indicator .tooltip:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 15px;
+  height: 15px;
+  background-color: #ebf1ed;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%) rotate(45deg);
+}
+.tech-level-content .tech-level-components .language-component .line:before {
+  content: "0";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  font-size: 14px;
+  color: rgba(154, 160, 134, 0.6);
+}
+.tech-level-content .tech-level-components .language-component .line:after {
+  content: "100";
+  position: absolute;
+  right: 0;
+  top: 14px;
+  font-size: 14px;
+  color: rgba(154, 160, 134, 0.6);
+}
+
+/*# sourceMappingURL=TechLevel.css.map */

@@ -1,0 +1,104 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #3e5d4c;
+  text-transform: capitalize;
+  font-family: "Lobster Two";
+  font-weight: 700;
+}
+
+.navbar-nav {
+  width: 100%;
+  height: 70px;
+  background-color: #ebf1ed;
+  position: relative;
+}
+.navbar-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.navbar-nav .container .nav-left .logo {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Lobster Two";
+}
+.navbar-nav .container .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar-nav .container .nav-right .ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navbar-nav .container .nav-right .ul li a {
+  font-family: "Ysabeau Infant";
+  font-weight: 700;
+  padding: 5px 10px;
+  font-size: 22px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 9999;
+}
+.navbar-nav .container .nav-right .ul li a.active {
+  color: rgba(154, 160, 134, 0.6);
+  font-weight: 900;
+}
+@media screen and (max-width: 650px) {
+  .navbar-nav .container .nav-right .ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ebf1ed;
+    width: 100%;
+    display: none;
+    z-index: 99;
+    opacity: 0;
+    height: auto;
+    padding: 50px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .navbar-nav .container .nav-right .ul.showMobileMenu {
+    display: flex;
+    opacity: 1;
+  }
+}
+.navbar-nav .container .nav-right .burger {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #d0e0dc;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.navbar-nav .container .nav-right .burger:hover {
+  opacity: 0.8;
+}
+.navbar-nav .container .nav-right .burger svg {
+  color: #3e5d4c;
+}
+@media screen and (max-width: 650px) {
+  .navbar-nav .container .nav-right .burger {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,20 @@
+{
+  "about-me": "Hello. My name is Amiko. I am 23 years old. I live in Tbilisi. I intend to become a front-end developer, and I will follow the front-end until the end. I studied 5 months in IT-Academy-Step-Georgia, I passed Html Css Javascript here. Then I studied in Tbilisi school of communication 2 months ReactJs. I am motivated, I want to be in touch with real projects to deepen my knowledge. I want to do an internship and then get a job.",
+  "work-experience": "I have no work experience",
+  "education": [
+    {
+      "id": 1,
+      "languages": ["Html","Css","Javascript"],
+      "collage": "It academy step georgia",
+      "period": "oct 2022 - apr 2023",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "languages": ["React"],
+      "collage": "Tbilisi school of communication",
+      "period": "may 2023 - jun 2023",
+      "completed": true
+    }
+  ]
+}

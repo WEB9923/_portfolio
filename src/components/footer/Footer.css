@@ -1,0 +1,99 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #3e5d4c;
+  text-transform: capitalize;
+  font-family: "Lobster Two";
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #ebf1ed;
+}
+.footer .container .footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 2px solid #d0e0dc;
+}
+.footer .container .footer-top .footer-left .logo {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: "Lobster Two";
+}
+.footer .container .footer-top .footer-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer .container .footer-top .footer-right .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer .container .footer-top .footer-right .contact-info p {
+  color: #7C8363;
+  font-family: "Ysabeau Infant";
+  font-weight: 600;
+  user-select: none;
+  font-size: 16px;
+}
+@media screen and (max-width: 700px) {
+  .footer .container .footer-top .footer-right .social {
+    display: none;
+  }
+}
+.footer .container .footer-bottom {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .container .footer-bottom .footer-bottom-left ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.footer .container .footer-bottom .footer-bottom-left ul li a {
+  font-family: "Ysabeau Infant";
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: rgba(154, 160, 134, 0.6);
+}
+.footer .container .footer-bottom .footer-bottom-left ul li a.active {
+  color: #7C8363;
+}
+.footer .container .footer-bottom .footer-bottom-right p {
+  color: #3e5d4c;
+  font-family: "Ysabeau Infant";
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.footer .container .footer-bottom .footer-bottom-right p span {
+  color: #7C8363;
+  font-weight: 900;
+}
+@media screen and (max-width: 780px) {
+  .footer .container .footer-bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer .container .footer-bottom .footer-bottom-right p {
+    padding: 5px 10px;
+    background-color: #d0e0dc;
+    border-radius: 6px;
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */

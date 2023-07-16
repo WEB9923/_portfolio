@@ -1,0 +1,34 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #3e5d4c;
+  text-transform: capitalize;
+  font-family: "Lobster Two";
+  font-weight: 700;
+}
+
+.projects-section .container .projects-wrapper {
+  min-height: 300px;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  justify-content: center;
+}
+.projects-section .container .projects-wrapper .error-text {
+  color: #bc4d4d;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Ysabeau Infant";
+}
+
+/*# sourceMappingURL=ProjectsPage.css.map */

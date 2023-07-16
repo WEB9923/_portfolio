@@ -1,0 +1,92 @@
+@import "../../styles/Variables";
+@import "../../styles/Mixins";
+
+form{
+   max-width: 550px;
+   min-width: 400px;
+   padding: 20px 15px;
+   border-radius: $smallR;
+   background-color: $bgColor;
+   @media screen and (max-width: 550px){
+      min-width: 350px;
+   }
+   .success,
+   .error{
+      padding: 5px 10px;
+      margin-top: 10px;
+      width: 100%;
+      border-radius: $smallR;
+      color: $lightTextColor;
+      font-weight: $mediumWeight;
+      font-family: $font;
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 5px;
+   }
+   .success{
+      background-color: rgba(126, 191, 126, 0.29);
+      color: #59c659;
+   }
+   .error{
+      background-color: rgba(192, 134, 134, 0.59);
+      color: #c65555;
+   }
+   .form-wrapper{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 20px;
+      font-family: $font;
+      div{
+         input,
+         textarea{
+            background-color: $darkestBgColor;
+            color: $textColor;
+            font-size: calc($small + 1px);
+            font-weight: $mediumWeight;
+            font-family: $font;
+            width: 100%;
+            min-width: 100%;
+            resize: none;
+            height: 45px;
+            border: 3px solid transparent;
+            outline: none;
+            padding-inline: 5px;
+            border-radius: $smallR;
+            transition: .3s ease;
+            &:focus{
+               border: 3px solid $lightTextColor;
+            }
+         }
+         textarea{
+            height: 100px;
+         }
+         button[type="submit"]{
+            height: 45px;
+            border: 3px solid transparent;
+            outline: none;
+            padding-inline: 5px;
+            border-radius: $smallR;
+            transition: .3s ease;
+            width: 100%;
+            background-color: $lightTextColor;
+            font-size: calc($small + 3.5px);
+            font-weight: $mediumWeight;
+            text-transform: capitalize;
+            font-family: $font;
+            color: $darkestBgColor;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            svg{
+               color: $darkestBgColor;
+            }
+         }
+      }
+   }
+}

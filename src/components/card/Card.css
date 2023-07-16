@@ -1,0 +1,141 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #3e5d4c;
+  text-transform: capitalize;
+  font-family: "Lobster Two";
+  font-weight: 700;
+}
+
+.card {
+  min-width: 300px;
+  height: auto;
+  background-color: #ebf1ed;
+  padding: 20px 15px;
+  border-radius: 6px;
+  flex: 1;
+}
+.card .card-top {
+  min-height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+}
+.card .card-top h2 {
+  color: #7C8363;
+  font-family: "Ysabeau Infant";
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-weight: 900;
+  text-align: center;
+  font-size: 30px;
+}
+.card .card-body {
+  padding: 30px 0;
+  font-family: "Ysabeau Infant";
+}
+.card .card-body div {
+  font-family: "Ysabeau Infant";
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  font-weight: 600;
+  color: #3e5d4c;
+  margin: 7px 0;
+}
+.card .card-body div span {
+  background-color: #d0e0dc;
+  color: #7C8363;
+  font-size: 14px;
+  border-radius: 6px;
+  user-select: none;
+  margin-left: 5px;
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .card-body div span.has {
+  color: #5ea65e;
+}
+.card .card-body div span.not-has {
+  color: #bc4d4d;
+}
+.card .info {
+  font-family: "Ysabeau Infant";
+  font-weight: 600;
+  color: #3e5d4c;
+  padding: 0 0 30px 0;
+}
+.card .info div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 35px;
+}
+.card .info div input[type=text] {
+  padding-inline: 5px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #d0e0dc;
+  color: rgba(154, 160, 134, 0.6);
+  flex: 3;
+}
+.card .info div button {
+  flex: 1;
+  padding-inline: 5px;
+  border: none;
+  height: 100%;
+  outline: none;
+  background-color: #d0e0dc;
+  cursor: pointer;
+  color: #7C8363;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.card .info .created-at {
+  padding: 30px 0 0 0;
+}
+.card .info .created-at p {
+  color: #7C8363;
+  font-size: 14px;
+}
+.card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .card-footer a {
+  color: #3e5d4c;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-family: "Ysabeau Infant";
+  font-weight: 600;
+  user-select: none;
+  cursor: pointer;
+}
+.card .card-footer a:hover {
+  color: #7C8363;
+}
+.card .card-footer a:hover svg {
+  color: #7C8363;
+}
+
+/*# sourceMappingURL=Card.css.map */
