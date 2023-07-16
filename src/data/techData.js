@@ -20,12 +20,12 @@ export const stack = [
    {
       title: "html",
       img: html,
-      level: 90
+      level: 80
    },
    {
       title: "css",
       img: css,
-      level: 90
+      level: 80
    },
    {
       title: "javascript",
@@ -40,12 +40,12 @@ export const stack = [
    {
       title: "sass",
       img: sass,
-      level: 90
+      level: 80
    },
    {
       title: "less",
       img: less,
-      level: 90
+      level: 80
    },
    {
       title: "tailwind",
@@ -90,12 +90,12 @@ export const stack = [
    {
       title: "github",
       img: github,
-      level: 70
+      level: 60
    },
    {
       title: "git",
       img: git,
-      level: 40
+      level: 35
    },
    {
       title: "vscode",
