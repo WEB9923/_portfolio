@@ -10,8 +10,6 @@ export const ThemeContextProvider = ({children}) => {
          localStorage.setItem('darkmode', newTheme.toString());
          return newTheme;
       });
-      const body = document.body;
-      body.classList.add("darkmode");
    }
 
    useEffect(() => {
