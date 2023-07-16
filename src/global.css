@@ -33,4 +33,13 @@ section {
   color: #7C8363;
 }
 
+::-webkit-scrollbar {
+  background-color: rgba(154, 160, 134, 0.6);
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3e5d4c;
+}
+
 /*# sourceMappingURL=global.css.map */

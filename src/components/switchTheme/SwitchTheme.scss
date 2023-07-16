@@ -12,6 +12,7 @@ button{
    border: 2px solid $textColor;
    background-color: $darkestBgColor;
    border-radius: $smallR;
+   cursor: pointer;
    svg{
       color: $textColor;
    }

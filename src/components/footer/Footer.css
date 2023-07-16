@@ -103,6 +103,9 @@
 .footer.darkmode {
   background-color: #323030;
 }
+.footer.darkmode .footer-top {
+  border-bottom: 1px solid #363837;
+}
 @media screen and (max-width: 780px) {
   .footer.darkmode .footer-bottom .footer-bottom-right p {
     background-color: #363837;

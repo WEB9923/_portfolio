@@ -21,3 +21,13 @@ section{padding: 60px 0;}
     background-color: $darkestBgColor;
     color: $lightTextColor;
 }
+
+
+::-webkit-scrollbar{
+    background-color: $colorlessText;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $textColor;
+}
+

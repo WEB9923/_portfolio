@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["SwitchTheme.scss","../../styles/Variables.scss"],"names":[],"mappings":"AAGA;EACG;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA,kBCVc;EDWd,eCWK;;ADVL;EACG,OCZM;;ADcT;EACG,kBCVmB","file":"SwitchTheme.css"}
+{"version":3,"sourceRoot":"","sources":["SwitchTheme.scss","../../styles/Variables.scss"],"names":[],"mappings":"AAGA;EACG;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA,kBCVc;EDWd,eCWK;EDVL;;AACA;EACG,OCbM;;ADeT;EACG,kBCXmB","file":"SwitchTheme.css"}
