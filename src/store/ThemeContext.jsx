@@ -1,7 +1,7 @@
 import {createContext, useContext, useEffect, useState} from "react";
 const ThemeContext = createContext();
 
-export const ThemeContextProvider = ({children}) => {
+export const ThemeContextProvider = ({ children }) => {
    const [isDarkTheme,setIsDarkTheme] = useState(false);
 
    const handleChangeTheme = () => {
@@ -15,7 +15,7 @@ export const ThemeContextProvider = ({children}) => {
    useEffect(() => {
       const storedTheme = localStorage.getItem("darkmode");
       setIsDarkTheme(storedTheme === "true");
-   },[])
+   },[]);
 
    const value = {
       isDarkTheme,

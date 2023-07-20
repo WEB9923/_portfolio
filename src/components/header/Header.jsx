@@ -17,7 +17,7 @@ export default function Header() {
                </div>
                <div className="header-right">
                   <div className="header-image">
-                     <img src={headerImage} alt="image not available"/>
+                     <img src={headerImage} alt="image not available" loading="eager"/>
                   </div>
                </div>
             </div>

@@ -9,9 +9,9 @@ export default function AnimatedText({text,index,cls}) {
             key={index}
             className={cls}
             layoutId="letter"
-            initial={{y:-100,opacity:0}}
+            initial={{y:-70,opacity:0}}
             animate={{y:0,opacity:1}}
-            transition={{duration:0.6,delay:index * 0.1,damping:150,stiffness:100}}
+            transition={{duration:0.3,delay:index * 0.07,bounce:0.3,stiffness:100}}
          >
             {text}
          </motion.span>

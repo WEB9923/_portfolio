@@ -20,7 +20,32 @@ export default function Card({data}) {
 
    return (
       <>
-         <motion.div className={`card ${isDarkTheme && "darkmode"}`} initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",stiffness:100,duration:0.5}}>
+         <motion.div
+            className={`card ${isDarkTheme && "darkmode"}`}
+            initial={{
+               y:30,
+               opacity:0
+            }}
+            whileInView={{
+               y:0,
+               opacity:1
+            }}
+            viewport={{once:false}}
+            transition={{
+               type:"spring",
+               stiffness:100,
+               duration:0.5
+            }}
+            whileHover={{
+               scale:0.97,
+               transition:{
+                  duration: 0.3,
+                  type:"spring",
+                  bounce: 0.2,
+                  stiffness:200
+               }
+            }}
+         >
             <div className="card-top">
                {/* eslint-disable-next-line react/prop-types */}
                <h2>{data?.name}</h2>

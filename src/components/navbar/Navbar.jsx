@@ -15,32 +15,58 @@ export default function Navbar() {
    const {isDarkTheme} = useTheme();
    return (
       <>
-         <nav className={`navbar-nav ${isDarkTheme && "darkmode"}`}>
+         <motion.nav
+            className={`navbar-nav ${isDarkTheme && "darkmode"}`}
+         >
             <div className="container">
                <motion.div
-                  initial={{x: -50, opacity: 0}}
-                  animate={{x: 0, opacity: 1}}
-                  transition={{duration: 1, type: "tween"}}
+                  initial={{
+                     x: -30,
+                     opacity: 0
+                  }}
+                  animate={{
+                     x: 0,
+                     opacity: 1
+                  }}
+                  transition={{
+                     duration: 0.5,
+                     type: "tween",
+                     delay:0.3
+                  }}
                   className="nav-left"
                >
                   <Link to={"/"} className="logo">{`{<a.ch.p./>}`}</Link>
                </motion.div>
-               <motion.div className="nav-right">
+               <motion.div
+                  initial={{
+                     x: 30,
+                     opacity: 0
+                  }}
+                  animate={{
+                     x: 0,
+                     opacity: 1
+                  }}
+                  transition={{
+                     duration: 0.5,
+                     type: "tween",
+                     delay:0.3
+                  }}
+                  className="nav-right"
+               >
                   {/*<AnimatePresence>*/}
-                  <motion.ul
-                     className={`${isShowMobileMenu && "showMobileMenu"} ul`
-                  }
-                  >
-                     {links.map((link) => (
-                        <li
-                           key={link.id}
-                        >
-                           <NavLink to={link.path} onClick={() => setIsShowMobileMenu(false)}>
-                              {link.title}
-                           </NavLink>
-                        </li>
-                     ))}
-                  </motion.ul>
+                     <motion.ul
+                        className={`${isShowMobileMenu && "showMobileMenu"} ul`}
+                     >
+                        {links.map((link) => (
+                           <li
+                              key={link.id}
+                           >
+                              <NavLink to={link.path} onClick={() => setIsShowMobileMenu(false)}>
+                                 {link.title}
+                              </NavLink>
+                           </li>
+                        ))}
+                     </motion.ul>
                   {/*</AnimatePresence>*/}
                   <div style={{
                      display: "flex",
@@ -57,7 +83,7 @@ export default function Navbar() {
                   </div>
                </motion.div>
             </div>
-         </nav>
+         </motion.nav>
       </>
    );
 }

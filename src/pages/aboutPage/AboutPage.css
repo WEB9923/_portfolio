@@ -52,7 +52,7 @@
 }
 .about-me .container .about-me-wrapper .about-content .education .education-wrapper .education-component {
   width: 100%;
-  border-bottom: 0.5px solid #d0e0dc;
+  border-bottom: 0.5px solid rgb(208, 224, 220);
   padding: 15px 5px;
 }
 .about-me .container .about-me-wrapper .about-content .education .education-wrapper .education-component .education-top {
@@ -118,7 +118,7 @@
   color: #c65555;
 }
 .about-me.darkmode {
-  background-color: #363837;
+  background-color: rgb(54, 56, 55);
 }
 .about-me.darkmode .container .about-me-wrapper .about-content .education .education-wrapper .education-component {
   border-bottom: 0.5px solid #323030;

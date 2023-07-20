@@ -16,9 +16,19 @@ export default function AboutPage() {
                <div className="about-me-wrapper">
                   <motion.p
                      className="about-text"
-                     initial={{opacity:0,y:50}}
-                     animate={{opacity:1,y:0}}
-                     tranition={{type:"spring",duration:0.5,stiffness:100}}
+                     initial={{
+                        opacity:0,
+                        y:50
+                     }}
+                     animate={{
+                        opacity:1,
+                        y:0
+                     }}
+                     tranition={{
+                        type:"spring",
+                        duration:0.5,
+                        stiffness:100
+                     }}
                   >
                      {"<p>"}👋{about["about-me"]}{"<p/>"}
                   </motion.p>
@@ -35,9 +45,20 @@ export default function AboutPage() {
                                  <motion.div
                                     key={item.id}
                                     className="education-component"
-                                    initial={{y:50,opacity:0}}
-                                    whileInView={{y:0,opacity:1}}
-                                    transition={{duration:0.5,type:"spring",stiffness:100}}
+                                    initial={{
+                                       y:50,
+                                       opacity:0
+                                    }}
+                                    whileInView={{
+                                       y:0,
+                                       opacity:1
+                                    }}
+                                    viewport={{once:false}}
+                                    transition={{
+                                       duration:0.5,
+                                       type:"spring",
+                                       stiffness:100
+                                    }}
                                  >
                                     <div className="education-top">
                                        {item.languages.map((lang) => (

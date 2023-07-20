@@ -34,9 +34,21 @@ export default function Form({obj, onSubmit}) {
             autoComplete={"off"}
             ref={obj.formRef}
             onSubmit={handleSubmit}
-            initial={{opacity:0,y:50,scale:0.5}}
-            animate={{opacity:1, y:0, scale:1}}
-            transition={{type:"spring",stiffness:100,duration:0.5}}
+            initial={{
+               opacity:0,
+               y:50,
+               scale:0.5
+            }}
+            animate={{
+               opacity:1,
+               y:0,
+               scale:1
+            }}
+            transition={{
+               type:"spring",
+               stiffness:100,
+               duration:0.5
+            }}
             className={`${isDarkTheme && "darkmode"}`}
          >
             <h1 className="title">send email</h1>

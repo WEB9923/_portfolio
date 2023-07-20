@@ -21,9 +21,20 @@ export default function TechStack() {
                         <motion.div
                            key={image.title}
                            className="stack-item"
-                           initial={{y: 40,opacity:0}}
-                           whileInView={{y: 0, opacity:1}}
-                           transition={{type: "spring", stiffness: 100, duration: 0.5}}
+                           initial={{
+                              y: 40,
+                              opacity:0
+                           }}
+                           whileInView={{
+                              y: 0,
+                              opacity:1
+                           }}
+                           viewport={{once:false}}
+                           transition={{
+                              type: "spring",
+                              stiffness: 100,
+                              duration: 0.5
+                           }}
                         >
                            <div className="img">
                               {image.img ? <img src={image.img} alt={image.title}/>

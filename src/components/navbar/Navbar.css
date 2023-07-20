@@ -86,7 +86,7 @@
   display: none;
   align-items: center;
   justify-content: center;
-  background-color: #d0e0dc;
+  background-color: rgb(208, 224, 220);
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -108,7 +108,7 @@
   background-color: #323030;
 }
 .navbar-nav.darkmode .nav-right .burger {
-  background-color: #363837;
+  background-color: rgb(54, 56, 55);
 }
 @media screen and (max-width: 650px) {
   .navbar-nav.darkmode .nav-right .ul {

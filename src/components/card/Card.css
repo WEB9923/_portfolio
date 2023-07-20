@@ -53,7 +53,7 @@
   margin: 7px 0;
 }
 .card .card-body div span {
-  background-color: #d0e0dc;
+  background-color: rgb(208, 224, 220);
   color: #7C8363;
   font-size: 14px;
   border-radius: 6px;
@@ -90,7 +90,7 @@
   border: none;
   outline: none;
   border-radius: 6px;
-  background-color: #d0e0dc;
+  background-color: rgb(208, 224, 220);
   color: rgba(154, 160, 134, 0.6);
   flex: 3;
 }
@@ -100,7 +100,7 @@
   border: none;
   height: 100%;
   outline: none;
-  background-color: #d0e0dc;
+  background-color: rgb(208, 224, 220);
   cursor: pointer;
   color: #7C8363;
   display: flex;
@@ -141,13 +141,13 @@
   background-color: #323030;
 }
 .card.darkmode .card-body div span {
-  background-color: #363837;
+  background-color: rgb(54, 56, 55);
 }
 .card.darkmode .info div input {
-  background-color: #363837;
+  background-color: rgb(54, 56, 55);
 }
 .card.darkmode .info div button {
-  background-color: #363837;
+  background-color: rgb(54, 56, 55);
 }
 
 /*# sourceMappingURL=Card.css.map */

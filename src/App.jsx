@@ -4,12 +4,12 @@ import {ThemeContextProvider} from "./store/ThemeContext.jsx";
 
 export default function App() {
 
-  return (
-    <>
-       <ThemeContextProvider>
-          <RouterProvider router={routes} />
-       </ThemeContextProvider>
-    </>
-  )
+   return (
+      <>
+         <ThemeContextProvider>
+            <RouterProvider router={routes}/>
+         </ThemeContextProvider>
+      </>
+   )
 }
 

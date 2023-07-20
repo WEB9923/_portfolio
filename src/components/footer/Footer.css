@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px 0;
-  border-bottom: 2px solid #d0e0dc;
+  border-bottom: 2px solid rgb(208, 224, 220);
 }
 .footer .container .footer-top .footer-left .logo {
   font-weight: 900;
@@ -96,7 +96,7 @@
   }
   .footer .container .footer-bottom .footer-bottom-right p {
     padding: 5px 10px;
-    background-color: #d0e0dc;
+    background-color: rgb(208, 224, 220);
     border-radius: 6px;
   }
 }
@@ -104,11 +104,11 @@
   background-color: #323030;
 }
 .footer.darkmode .footer-top {
-  border-bottom: 1px solid #363837;
+  border-bottom: 1px solid rgb(54, 56, 55);
 }
 @media screen and (max-width: 780px) {
   .footer.darkmode .footer-bottom .footer-bottom-right p {
-    background-color: #363837;
+    background-color: rgb(54, 56, 55);
   }
 }
 

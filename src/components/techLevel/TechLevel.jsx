@@ -15,9 +15,20 @@ export default function TechLevel({data}) {
                {/* eslint-disable-next-line react/prop-types */}
                {data.map((item, index) => (
                   <motion.div
-                     initial={{y: 50, opacity: 0}}
-                     transition={{duration: 0.5, type: "spring", stiffness: 100}}
-                     whileInView={{y: 0, opacity: 1}}
+                     initial={{
+                        y: 50,
+                        opacity: 0
+                     }}
+                     transition={{
+                        duration: 0.5,
+                        type: "spring",
+                        stiffness: 100
+                     }}
+                     viewport={{once:false}}
+                     whileInView={{
+                        y: 0,
+                        opacity: 1
+                     }}
                      key={index}
                      className="language-component"
                   >
