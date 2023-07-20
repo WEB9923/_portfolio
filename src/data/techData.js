@@ -20,12 +20,12 @@ export const stack = [
    {
       title: "html",
       img: html,
-      level: 80
+      level: 75
    },
    {
       title: "css",
       img: css,
-      level: 80
+      level: 75
    },
    {
       title: "javascript",
@@ -40,12 +40,12 @@ export const stack = [
    {
       title: "sass",
       img: sass,
-      level: 80
+      level: 75
    },
    {
       title: "less",
       img: less,
-      level: 80
+      level: 75
    },
    {
       title: "tailwind",
@@ -55,12 +55,12 @@ export const stack = [
    {
       title: "styled",
       img: styledComponents,
-      level: 60
+      level: 55
    },
    {
       title: "strapi",
       img: strapi,
-      level: 35
+      level: 30
    },
    {
       title: "formik",
@@ -85,7 +85,7 @@ export const stack = [
    {
       title: "axios",
       img: axios,
-      level: 70
+      level: 65
    },
    {
       title: "github",
