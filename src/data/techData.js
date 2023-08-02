@@ -58,11 +58,6 @@ export const stack = [
       level: 55
    },
    {
-      title: "strapi",
-      img: strapi,
-      level: 30
-   },
-   {
       title: "formik",
       img: formik,
       level: 65

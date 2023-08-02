@@ -13,6 +13,7 @@ export default function Navbar() {
       setIsShowMobileMenu(!isShowMobileMenu)
    }
    const {isDarkTheme} = useTheme();
+
    return (
       <>
          <motion.nav
