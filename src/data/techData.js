@@ -4,8 +4,8 @@ import less from "../assets/tech-stack/less.png";
 import html from "../assets/tech-stack/html.svg";
 import css from "../assets/tech-stack/css.svg";
 import js from "../assets/tech-stack/js.svg";
+import ts from "../assets/tech-stack/typescript.png";
 import sass from "../assets/tech-stack/sass.svg";
-import strapi from "../assets/tech-stack/strapi.png";
 import github from "../assets/tech-stack/github.svg";
 import styledComponents from "../assets/tech-stack/styledComponents.png";
 import git from "../assets/tech-stack/git.svg";
@@ -30,6 +30,11 @@ export const stack = [
    {
       title: "javascript",
       img: js,
+      level: 60
+   },
+   {
+      title: "typescript",
+      img: ts,
       level: 60
    },
    {
